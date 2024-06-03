@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Model</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        img {
+            display: block;
+            margin: 0 auto 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label, input, select {
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Student Performance Model</h1>
+        <img src="statics\performance.jpg" alt="Student Performance">
+        <form action="/predict_score" method="post">
+            <label for="hours_studied">Hours Studied:</label>
+            <input type="text" id="hours_studied" name="hours_studied" required>
+
+            <label for="previous_score">Previous Score:</label>
+            <input type="text" id="previous_score" name="previous_score" required>
+
+            <label for="extra_act">Extra Curricular Activities:</label>
+            <select id="extra_act" name="extra_act" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="sleep_hours">Sleep Hours:</label>
+            <input type="text" id="sleep_hours" name="sleep_hours" required>
+
+            <label for="sample_paper">Sample Paper Solved:</label>
+            <input type="text" id="sample_paper" name="sample_paper" required>
+
+            <input type="submit" value="Predict Score">
+        </form>
+    </div>
+</body>
+</html>

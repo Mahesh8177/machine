@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Records</title>
+</head>
+<body style="background-color: hwb(285 28% 5%);">
+<!-- <body background-image="static/dhoni.jpg" background-repeat="no-repeat” background-size="cover”> -->
+    <!-- <center> -->
+    <center>
+    <h1> Student Performance Records Prediction</h1>
+    </center>
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INSURANCE -->
+    <br>
+    <br>
+    <img src='statics\performance.jpg'>
+    
+    <br><br>
+    <form method="get" action ="/predict_score">
+        
+        <label>hours_studied:</label>
+        <input type="text" name ="hours_studied">
+        <br>
+        <br>
+        <label>previous_score</label>
+        <input type="text" name="previous_score">
+        <br>
+        <br>   						
+        <label>extra_act:</label>
+        <select name="extra_act">
+            <option value="yes">yes</option>
+            <option value="no">no</option></select>
+        
+        <br>  
+        <br>        
+        <label>sleep_hours</label>
+        <input type="text" name ="sleep_hours">
+        <br>
+        <br>
+        <label>sample_paper</label>
+        <input type="text" name ="sample_paper">
+        
+        <br>
+        <br>
+        <input type="submit" value ="SUBMIT">
+     
+
+    </form>
+   
+    <br>
+    <br>
+    {{Score}}
+    <!-- </center>  -->
+</body>
+</html>
+
